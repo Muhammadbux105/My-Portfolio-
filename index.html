@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Bux | Full‑Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1b8760d66e.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --accent: #6366f1;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --muted: #64748b;
+      --btn-bg: #6366f1;
+      --btn-hover: #4f46e5;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: white;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.hero div {
+  flex: 1;
+  animation: slideInLeft 1s ease;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.btn {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--btn-bg);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(99,102,241,0.25);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px);
+}
+
+.hero img {
+  flex: 1;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  animation: slideInRight 1.2s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">MBux.dev</div>
+    <i class="fas fa-bars menu-toggle"></i>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>  <section class="hero">
+    <div>
+      <h1>Crafting Digital Experiences<br/> with <span style="color:var(--accent)">AI & Code</span></h1>
+      <p>I’m <strong>Muhammad Bux</strong>, a Pakistan‑based Full‑Stack Developer turning ideas into high‑impact SaaS products. Scroll and explore my work ➜</p>
+      <a href="projects.html" class="btn">View Case Studies</a>
+    </div>
+    <img src="assets/img/hero_ai.jpg" alt="Developer working with futuristic AI tools"/>
+  </section>  <footer>© 2025 Muhammad Bux — All Rights Reserved</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>0

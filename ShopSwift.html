@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSwift | E‑Commerce UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+    }header {
+  background-color: white;
+  padding: 20px 10%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6366f1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 10% 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #6b7280;
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.products {
+  padding: 40px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.product-info .price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #10b981;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ShopSwift</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="hero">
+    <h1>Effortless Shopping, Swift Delivery</h1>
+    <p>Discover the best tech products at unbeatable prices. Fast, secure, and smart.</p>
+  </section>  <section class="products">
+    <div class="product">
+      <img src="assets/img/product1.jpg" alt="Smartwatch">
+      <div class="product-info">
+        <h3>AI Fitness Smartwatch</h3>
+        <p>Track your health & connect with apps</p>
+        <div class="price">$129</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="assets/img/product2.jpg" alt="Wireless Earbuds">
+      <div class="product-info">
+        <h3>Noise Cancelling Earbuds</h3>
+        <p>Pure sound, zero distractions</p>
+        <div class="price">$89</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="assets/img/product3.jpg" alt="Laptop">
+      <div class="product
